@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="规划标题"
+        android:textSize="15dp" 
+        android:id="@+id/myplan_title"/>
+
+    <TextView
+        android:id="@+id/myplan_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myplan_title"
+        android:layout_below="@+id/myplan_title"
+        android:text="规划内容提要"
+        android:textSize="15dp" 
+        android:layout_marginTop="5dp"/>
+
+     <TextView
+         android:id="@+id/myplan_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/myplan_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="24dp"
+         android:text="2015/12/27       21:00" />
+
+     <ImageView
+         android:id="@+id/myplan_clock"
+         android:layout_width="32dp"
+         android:layout_height="32dp"
+         android:layout_alignRight="@+id/myplan_time"
+         android:layout_below="@+id/myplan_time"
+         android:src="@drawable/icon_clockin" />
+     <ImageView
+         android:layout_width="wrap_content"
+		 android:layout_height="5dp"
+		 android:src="@drawable/divide_bar"	
+         />
+
+</RelativeLayout>

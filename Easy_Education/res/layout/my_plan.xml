@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/myplan_relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_theme"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/myplan_back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/userpage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/myplan_back_main"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="我的作息规划"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_addplan" />
+        
+    </RelativeLayout>
+    
+	<ListView
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/myplan_list"
+	    
+	    />
+     
+     
+     
+</LinearLayout>

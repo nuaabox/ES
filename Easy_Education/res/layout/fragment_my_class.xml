@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <com.easyeducation.view.CircleImageView
+            android:id="@+id/my_class_person_iv_head_portrait"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/hehe" />
+
+        <TextView
+            android:id="@+id/my_class_person_tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/my_class_person_iv_head_portrait"
+            android:text="1410班"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/my_class_person_tv_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_class_person_tv_class"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/my_class_person_iv_head_portrait"
+            android:text="沈阳市第二中学"
+            android:textColor="#BEBEBE"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_class_person_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_class_person_tv_school"
+            android:layout_toRightOf="@+id/my_class_person_iv_head_portrait"
+            android:text="苏梦曦"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/my_class_person_tv_login_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/my_class_person_class"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_my_class_login_type"
+            android:text="学生登录"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/my_class_function_ll_publish_problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_class_question" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布问题"
+                android:textColor="#9C53B7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_class_function_ll_class_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_class_grade" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="班级成绩"
+                android:textColor="#0FCD6E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_class_function_ll_check_homework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_class_homework" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看作业"
+                android:textColor="#FB6F97" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#F5F5F5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_class_lv_question" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="班级问答区域"
+            android:textColor="#FB7097" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F5F5F5" />
+
+    <com.easyeducation.widget.pullrefreshview.PullToRefreshListView
+        android:id="@+id/my_class_lv_ask"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#f5f5f5"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

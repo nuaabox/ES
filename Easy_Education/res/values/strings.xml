@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="image_content_description">"image_content_description"</string>
+    <!-- register activity -->
+    <string name="register_is_null">"邮箱、密码、昵称 不能为空"</string>
+    <string name="register_success">"注册成功"</string>
+    <string name="register_failure">"注册失败"</string>
+    <string name="register_input_email">"输入邮箱"</string>
+    <string name="register_input_password">"输入密码"</string>
+    <string name="register_input_nickname">"输入昵称"</string>
+    <string name="register_btn_argee">"注册"</string>
+    <string name="register_email_error">"邮箱地址不合法"</string>
+    <!-- login activity -->
+    <string name="login_edit_username">"用户名"</string>
+    <string name="login_edit_password">"密码"</string>
+    <string name="login_btn_register">"注册"</string>
+    <string name="login_btn_login">"登录"</string>
+    <string name="login_success">"登录成功"</string>
+    <string name="login_failure">"登录失败"</string>
+    <string name="login_erro_is_null">"用户名、密码不能为空"</string>
+    <string name="login_version_date">"日期:%1$s"</string>
+    <string name="login_version_code">"版本:%1$s"</string>
+    <!-- functions  activity -->
+    <string name="function_list_logout">"注 销 用 户"</string>
+    <string name="app_name">易教</string>
+    <!-- custom service  activity -->
+    <string name="custom_service_get_list_failure">"获取客服失改"</string>
+    <string name="custom_service_people_list">"客服人员列表"</string>
+    <string name="register_user_exits">"该邮箱已注册"</string>
+    <string name="login_username_error">"登录帐号不存在请注册"</string>
+    <string name="login_pass_error">"密码错误"</string>
+    <string name="no_read_message">"···"</string>
+    <string name="delete_from_balck">删除黑名单</string>
+    <string name="cancle_black">取消</string>
+    <string name="network_not">当前网络不可用</string>
+    <string name="connect_fail">连接失败,将离线登陆</string>
+    <string name="de_notification_set">勿扰模式</string>
+    <string name="de_notification_start">开始时间</string>
+    <string name="de_notification_end">结束时间</string>
+    <string name="de_notification_status_no">当前未设置push屏蔽时间</string>
+    <string name="de_notification_status_yes">当前设置push屏蔽时间为：</string>
+    <string name="de_notification_information">开启后，在设定时间段内收到新消息时不会响铃或振动。</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Liu -->
+    <string name="content">内容</string>
+
+    <!-- Course -->
+    <string name="course_chinese">语文</string>
+    <string name="course_math">数学</string>
+    <string name="course_english">英语</string>
+    <string name="course_physics">物理</string>
+    <string name="course_chemistry">化学</string>
+    <string name="course_biology">生物</string>
+    <string name="course_geography">地理</string>
+    <string name="course_history">历史</string>
+    <string name="course_politics">政治</string>
+    <string name="course">科目</string>
+    <string name="course_name">课程名称</string>
+    <string name="course_teacher">授课教师</string>
+    <!-- School -->
+    <string name="school_safe_passageway">校园安全一点通</string>
+    <string name="school_cost_semester_query">学期学费查询</string>
+    <string name="school_cost_semester_pay">学期学费支付</string>
+    <string name="school_cost_history_query">历年学费查询</string>
+    <string name="school_cost_campus_card_recharge">校园卡充值</string>
+    <string name="school_cost_meal_card_recharge">食堂饭卡充值</string>
+    <string name="school_cost_library">图书馆费用</string>
+
+    <!-- Assignment -->
+    <string name="assignment_add">添 加 作 业</string>
+    <string name="assignment_change">修 改 作 业</string>
+
+    <!-- Syllabus -->
+    <string name="syllabus_monday">周一</string>
+    <string name="syllabus_tuesday">周二</string>
+    <string name="syllabus_wednesday">周三</string>
+    <string name="syllabus_thursday">周四</string>
+    <string name="syllabus_friday">周五</string>
+    <string name="syllabus_saturday">周六</string>
+    <string name="syllabus_sunday">周日</string>
+    <string name="syllabus_add">添 加 课 程</string>
+    <string name="syllabus_change">修 改 课 程</string>
+
+</resources>

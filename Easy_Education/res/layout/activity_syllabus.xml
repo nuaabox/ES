@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:id="@+id/syllabus_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/syllabus_wight"
+            android:layout_height="match_parent"
+            android:background="@color/color_FFEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/syllabus_title_tv_wight_get"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_D8E4F1"
+                android:gravity="center"
+                android:text="@string/syllabus_monday" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_FFF1D4"
+            android:gravity="center"
+            android:text="@string/syllabus_tuesday" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_FBD6E1"
+            android:gravity="center"
+            android:text="@string/syllabus_wednesday" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_FBD5CA"
+            android:gravity="center"
+            android:text="@string/syllabus_thursday" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_DBE3D4"
+            android:gravity="center"
+            android:text="@string/syllabus_friday" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_FAEEEE"
+            android:gravity="center"
+            android:text="@string/syllabus_saturday" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_FFEEEE"
+            android:gravity="center"
+            android:text="@string/syllabus_sunday" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_one"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_FBD5CA"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_two"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_FFF1D4"
+                    android:gravity="center"
+                    android:text="2" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_three"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_F1EAD4"
+                    android:gravity="center"
+                    android:text="3" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_four"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_DAE4E3"
+                    android:gravity="center"
+                    android:text="4" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_five"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_DBDAE8"
+                    android:gravity="center"
+                    android:text="5" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_six"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_DDCDDF"
+                    android:gravity="center"
+                    android:text="6" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_seven"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_EED2E0"
+                    android:gravity="center"
+                    android:text="7" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_eight"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_FCD5D6"
+                    android:gravity="center"
+                    android:text="8" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_nine"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_F8A6BE"
+                    android:gravity="center"
+                    android:text="9" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus_ll_ten"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/syllabus_wight"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_FFEEEE"
+                    android:gravity="center"
+                    android:text="10" />
+
+                <LinearLayout
+                    android:id="@+id/syllabus_course_ll_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

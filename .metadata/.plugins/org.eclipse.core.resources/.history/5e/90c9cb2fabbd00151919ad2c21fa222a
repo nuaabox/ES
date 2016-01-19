@@ -1,0 +1,49 @@
+package com.easyeducation.util;
+
+import java.io.ByteArrayOutputStream;
+
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.util.Base64;
+
+public class ImageChange {
+	
+	
+	public  static String  ImgtoByte( Bitmap  bp)
+	{
+		String str="";
+		ByteArrayOutputStream out = new ByteArrayOutputStream();  
+		bp.compress(Bitmap.CompressFormat.JPEG, 100, out);  
+		byte[] imagebyte = out.toByteArray();
+		str=Base64.encodeToString(imagebyte, Base64.DEFAULT);
+		return str;
+	}
+	
+	public   static Bitmap BytetoImg( String  str)
+	{
+		byte imgbyte[]= Base64.decode(str, Base64.DEFAULT);
+		Bitmap bitmap = BitmapFactory.decodeByteArray(imgbyte, 0, imgbyte.length);  
+		return bitmap;
+	}
+
+	 public static Bitmap resiezeBitmap(Bitmap srcbitmap)
+	 {
+		 Bitmap bitmap = null;
+		 int width=srcbitmap.getWidth();
+		 int height=srcbitmap.getHeight();
+		
+		 int acwid=500;
+		 int achei=500;
+		 float wscale=acwid/width;
+		 float hscale=achei/height;
+		 Matrix matrix = new Matrix();
+		 matrix.postScale(wscale,hscale); 
+		 bitmap = Bitmap.createBitmap(srcbitmap,0,0,width,width,matrix,true);	
+		 System.out.println(bitmap.getWidth()+"resize"+bitmap.getHeight());
+		 return bitmap;
+		 
+	 }
+
+}

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/school_ll_shuffling_figure"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bigimg1"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_999999" />
+
+    <RelativeLayout
+        android:id="@+id/school_rl_safe_passageway"
+        android:layout_width="fill_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_campussafe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/school_safe_passageway"
+                android:textColor="@color/color_FB7299"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/school_rl_cost_semester_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_tuitionaccess" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/school_cost_semester_query"
+                android:textColor="@color/color_FF8948"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/school_rl_cost_semester_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_tuitionpay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/school_cost_semester_pay"
+                android:textColor="@color/color_FFEA35"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/school_rl_cost_history_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_pretuitionaccess" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/school_cost_history_query"
+                android:textColor="@color/color_A8FF54"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_999999" />
+
+    <LinearLayout
+        android:id="@+id/school_rl_cost_campus_card_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_campuscard" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/school_cost_campus_card_recharge"
+                android:textColor="@color/color_9B51B6"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/school_rl_cost_meal_card_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_canteencard" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/school_cost_meal_card_recharge"
+                android:textColor="@color/color_FB7CA0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/school_rl_cost_cost_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_school_libiaryfee" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/school_cost_library"
+                android:textColor="@color/color_EE6651"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_999999" />
+
+</LinearLayout>

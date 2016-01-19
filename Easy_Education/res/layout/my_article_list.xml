@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+
+     <com.easyeducation.view.CircleImageView
+        android:id="@+id/article_list_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"   
+        android:scaleType="centerCrop"  
+        android:src="@drawable/hehe"  
+        />
+
+    	 <TextView
+    	     android:id="@+id/article_list_title"
+    	     android:layout_width="wrap_content"
+    	     android:layout_height="50dp"
+    	     android:layout_alignLeft="@+id/article_list_author"
+    	     android:layout_alignTop="@+id/article_list_author"
+    	     android:layout_marginTop="27dp"
+    	     android:gravity="center"
+    	     android:paddingLeft="15dp"
+    	     android:text="C语言设计奇技淫巧"
+    	     android:textColor="@color/color_home_username" />
+
+    	 <TextView
+    	     android:id="@+id/article_list_author"
+    	     android:layout_width="wrap_content"
+    	     android:layout_height="50dp"
+    	     android:layout_alignParentTop="true"
+    	     android:layout_marginLeft="20dp"
+    	     android:layout_toRightOf="@+id/article_list_img"
+    	     android:gravity="center"
+    	     android:paddingLeft="15dp"
+    	     android:text="作者姓名"
+    	     android:textColor="@color/color_theme"
+    	/>
+	 
+</RelativeLayout>

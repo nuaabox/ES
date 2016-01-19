@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+  >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@color/color_theme" >
+
+        <ImageView
+            android:id="@+id/thirdpage_private_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_sx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的学习"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5" >
+
+        <com.easyeducation.view.CircleImageView
+            android:id="@+id/mylearn_headsrc"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/hehe" />
+
+        <TextView
+            android:id="@+id/mylearn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/mylearn_headsrc"
+            android:text="Innocence"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mylearn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mylearn_name"
+            android:layout_below="@+id/mylearn_name"
+            android:layout_marginTop="5dp"
+            android:text="161340131"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/mylearn_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mylearn_id"
+            android:layout_alignBottom="@+id/mylearn_id"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/mylearn_id"
+            android:text="南京航空航天大学"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/mylearn_myfocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_focuseye" />
+
+        <ImageView
+            android:id="@+id/mylearn_personinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_personinfo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:text="我的关注"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/mylearn_mycollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mylearn_myfocus"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/icon_star" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/mylearn_mycollect"
+            android:text="我的收藏"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mylearn_personinfo"
+            android:layout_below="@+id/mylearn_personinfo"
+            android:text="个人信息"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:src="@drawable/divide_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/mylearn_myplantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mylearn_myplanimg"
+                    android:text="我的作息规划"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_myplanimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/incon_calender" />
+
+                <TextView
+                    android:id="@+id/mylearn_myplantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="5dp"
+                    android:text="距离本次计划结束"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mylearn_myplantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="90dp"
+                    android:layout_marginTop="25dp"
+                    android:text="距离下一个计划开始"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mylearn_myplan_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30分钟"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mylearn_myplan_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="25dp"
+                    android:text="30分钟"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_myplan_entry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_entry" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/divide_bar" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/mylearn_myscoreimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/icon_score" />
+
+                <TextView
+                    android:id="@+id/mylearn_myscroretext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mylearn_myscoreimg"
+                    android:text="我的成绩"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_myscore_entry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_entry" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/divide_bar" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/mylearn_mytabletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mylearn_mytableimg"
+                    android:text="我的课程表"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_mytableimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/icon_table" />
+
+                <TextView
+                    android:id="@+id/mylearn_mytabletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="5dp"
+                    android:text="距离本节课结束"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mylearn_mytabletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="25dp"
+                    android:text="距离下节课开始"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mylearn_mytable_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30分钟"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mylearn_mytable_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="25dp"
+                    android:text="30分钟"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_mytable_entry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_entry" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/divide_bar" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/mylearn_myteacherimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/icon_people" />
+
+                <TextView
+                    android:id="@+id/mylearn_myteachertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mylearn_myteacherimg"
+                    android:text="我的老师"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_myteacher_entry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_entry" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/divide_bar" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/mylearn_submitimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/icon_book" />
+
+                <TextView
+                    android:id="@+id/mylearn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mylearn_submitimg"
+                    android:text="我要投稿"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/mylearn_submit_entry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_entry" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/divide_bar" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/mylearn_settingimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/icon_setting" />
+
+                <ImageView
+                    android:id="@+id/mylearn_setting_entry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_entry" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
