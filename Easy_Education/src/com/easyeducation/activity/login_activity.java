@@ -58,6 +58,7 @@ public class login_activity  extends Activity{
 	private SharedPreferences static_userinfo;
 	private CheckBox remember;
 	private Editor myeditor;
+	public static String userphone;
 
 	protected void onCreate(Bundle savedInstanceState) {	
 		super.onCreate(savedInstanceState);
@@ -118,6 +119,7 @@ public class login_activity  extends Activity{
 					String country = (String) phoneMap.get("country");
 					String phone = (String) phoneMap.get("phone"); 
 					
+					
 					Intent intent=new Intent();
 					intent.putExtra("phone", phone);
 					intent.setClass(login_activity.this,regis_acitivity.class);
@@ -172,7 +174,7 @@ public class login_activity  extends Activity{
 			param.add(new BasicNameValuePair("phone",username.getText().toString()) );	
 			param.add(new BasicNameValuePair("password",password.getText().toString()));
 		
-			
+			userphone=username.getText().toString();
 			
 			HttpResponse httpResponse=null;
 			String result=new String("");

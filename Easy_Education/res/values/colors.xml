@@ -47,6 +47,10 @@
     <drawable name="btn_notfocus">#fc8ead</drawable>
     <drawable name="btn_focus">#fee8ef</drawable>
     
+    <drawable name="text_notfocus">#ffffff</drawable>
+    <drawable name="text_focus">#fee8ef</drawable>
+  
+    
     <!-- Liu -->
     <!-- School -->
     <color name="color_FB7299">#FB7299</color>

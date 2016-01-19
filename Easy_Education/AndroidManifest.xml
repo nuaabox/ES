@@ -178,7 +178,11 @@
             android:name="com.easyeducation.activity.myplan_activity"
             android:label="@string/app_name" >
         </activity>
-
+  		<activity
+            android:name="com.easyeducation.activity.Myarticle_activity"
+            android:label="@string/app_name" >
+        </activity>
+        
         <!-- easy education -->
 
         <service android:name="io.rong.imlib.RongService" />

@@ -161,14 +161,22 @@
                 android:text=""
                 android:textSize="12dp" />
 
-
-            
-
            
 
         </RelativeLayout>
     </ScrollView>
-    
-    
+
+    <TextView
+        android:id="@+id/userinfo_myarticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="23dp"
+        android:text="我的文章"
+          android:background="@drawable/redtext_bg"
+        android:textColor="@color/color_theme"
+        android:textSize="17dp" />
    
 </RelativeLayout>

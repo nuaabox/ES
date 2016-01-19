@@ -18,6 +18,7 @@ public class ImageChange {
 		bp.compress(Bitmap.CompressFormat.JPEG, 100, out);  
 		byte[] imagebyte = out.toByteArray();
 		str=Base64.encodeToString(imagebyte, Base64.DEFAULT);
+		System.gc();
 		return str;
 	}
 	
@@ -25,6 +26,7 @@ public class ImageChange {
 	{
 		byte imgbyte[]= Base64.decode(str, Base64.DEFAULT);
 		Bitmap bitmap = BitmapFactory.decodeByteArray(imgbyte, 0, imgbyte.length);  
+		System.gc();
 		return bitmap;
 	}
 

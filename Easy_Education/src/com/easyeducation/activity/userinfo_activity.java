@@ -42,7 +42,7 @@ public class userinfo_activity  extends Activity{
 	private ProgressDialog progressBar;
 	 private SharedPreferences static_userinfo;
 	 private ImageView headimage;
-	 private TextView nickname,studyid,school,sign,description;
+	 private TextView nickname,studyid,school,sign,description,myarticle;
 	 
 	protected void onCreate(Bundle savedInstanceState) {	
 		super.onCreate(savedInstanceState);
@@ -57,7 +57,18 @@ public class userinfo_activity  extends Activity{
 		sign=(TextView)this.findViewById(R.id.userinfo_sentence);
 		description=(TextView)this.findViewById(R.id.userinfo_introduction);
 		
-		
+		myarticle=(TextView)this.findViewById(R.id.userinfo_myarticle);
+		myarticle.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				// TODO 自动生成的方法存根
+				Intent intent=new Intent();
+				intent.setClass(userinfo_activity.this, Myarticle_activity.class);
+				startActivity(intent);
+			}
+			
+		});
 		edit.setOnClickListener(new OnClickListener(){
 
 			@Override
