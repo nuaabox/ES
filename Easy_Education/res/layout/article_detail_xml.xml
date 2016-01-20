@@ -18,7 +18,8 @@
           android:layout_height="30dp"
           android:layout_marginTop="5dp"
           android:src="@drawable/icon_back"
-          android:layout_centerVertical="true" />
+          android:layout_centerVertical="true" 
+          />
 
       <TextView
           android:id="@+id/textView1"
@@ -30,7 +31,8 @@
           android:text=""
           android:textColor="#ffffff"
           android:textSize="20dp"
-          android:gravity="center" />
+          android:gravity="center"
+           />
 
       <TextView
           android:id="@+id/collect_num"
@@ -42,7 +44,7 @@
           android:layout_marginRight="14dp"
           android:text="120"
           android:gravity="center"
-          android:layout_centerInParent="true"
+         
           android:textColor="#ffffff"
           android:textSize="17dp" />
 
@@ -53,7 +55,8 @@
           android:layout_alignParentTop="true"
           android:layout_toLeftOf="@+id/collect_num"
           android:src="@drawable/icon_addplan"
-          android:textSize="20dp" />
+          android:textSize="20dp"
+          android:background="@drawable/all_btn" />
 
   </RelativeLayout>
   <TextView
@@ -107,7 +110,7 @@
       >
 
       <android.support.v4.view.ViewPager
-          android:id="@+id/article_detail_viewpage"
+          android:id="@+id/article_detail_pager"
           android:layout_width="fill_parent"
           android:layout_height="160dp" >
       </android.support.v4.view.ViewPager>

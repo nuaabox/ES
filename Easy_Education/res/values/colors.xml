@@ -49,6 +49,9 @@
     
     <drawable name="text_notfocus">#ffffff</drawable>
     <drawable name="text_focus">#fee8ef</drawable>
+    <drawable name="red_notfocus">#fb7299</drawable>
+    <drawable name="notfocus">#00000000</drawable>
+    
   
     
     <!-- Liu -->

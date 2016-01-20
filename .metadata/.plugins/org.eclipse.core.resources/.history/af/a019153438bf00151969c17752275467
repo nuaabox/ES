@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="welcome_onrange">#FF6402</color>
+    <color name="title_bg">#3498DB</color>
+    <color name="item_function_list_divider">#E4E4E4</color>
+    <color name="color_theme">#fb7299</color>
+    <color name="color_loginfont">#fed6d6</color>
+    <color name="color_login">#ffc6c6</color>
+    <color name="color_logup">#c6e8ff</color>
+    <color name="color_institution">#9c9c9c</color>
+    <color name="color_home_username">#3c3b3b</color>
+    <color name="color_tagbg">#f4f4f4</color>
+    <color name="color_tagfont">#8ea1d2</color>
+    <color name="color_username">#737474</color>
+    <color name="color_2ndbutton">#aaddaf</color>
+    <color name="color_done">#a1a1a1</color>
+    <color name="color_title">#333333</color>
+    <color name="color_subtitle">#618aaa</color>
+    <color name="color_body">#7a7a7a</color>
+    <color name="color_status">#6597cf</color>
+    <color name="color_edit">#eedbd4</color>
+    <color name="color_edititembg">#f4f4f4</color>
+    <color name="color_edititemstroke">#cecece</color>
+    
+    
+        <color name="black_overlay">#66000000</color>
+    <color name="gray_background">#ffececec</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#E51A18</color>
+    <color name="line_color">#523E2E</color>
+   
+    <color name="search_tab_nomarl">#363636</color>
+    <color name="search_tab_select">#E82926</color>
+    <color name="menu_item_text_color">#E60200</color>
+    
+    <color name="news_item_has_read_textcolor">#828282</color>
+    <color name="news_item_no_read_textcolor">#363636</color>
+    
+    <color name="text_background_2">#fc8ead</color>
+    <color name="gray_text">#969696</color>
+    
+    
+    <drawable name="theme">#fb7299</drawable>
+    <drawable name="gray">#ccc</drawable>
+    <drawable name="btn_notfocus">#fc8ead</drawable>
+    <drawable name="btn_focus">#fee8ef</drawable>
+    
+    <drawable name="text_notfocus">#ffffff</drawable>
+    <drawable name="text_focus">#fee8ef</drawable>
+    <drawable name="red_notfocus">#fb7299</drawable>
+    
+  
+    
+    <!-- Liu -->
+    <!-- School -->
+    <color name="color_FB7299">#FB7299</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="color_FF8948">#FF8948</color>
+    <color name="color_9B51B6">#9B51B6</color>
+    <color name="color_FFEA35">#FFEA35</color>
+    <color name="color_FB7CA0">#FB7CA0</color>
+    <color name="color_A8FF54">#A8FF54</color>
+    <color name="color_EE6651">#EE6651</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    
+    <!-- Syllabus -->
+    <color name="color_FFEEEE">#FFEEEE</color>
+    <color name="color_D8E4F1">#D8E4F1</color>
+    <color name="color_FFF1D4">#FFF1D4</color>
+    <color name="color_FBD6E1">#FBD6E1</color>
+    <color name="color_FBD5CA">#FBD5CA</color>
+    <color name="color_DBE3D4">#DBE3D4</color>
+    <color name="color_FAEEEE">#FAEEEE</color>
+    <color name="color_F1EAD4">#F1EAD4</color>
+    <color name="color_DAE4E3">#DAE4E3</color>
+    <color name="color_DBDAE8">#DBDAE8</color>
+    <color name="color_DDCDDF">#DDCDDF</color>
+    <color name="color_EED2E0">#EED2E0</color>
+    <color name="color_FCD5D6">#FCD5D6</color>
+    <color name="color_F8A6BE">#F8A6BE</color>
+    
+    
+    
+    
+    
+</resources>
