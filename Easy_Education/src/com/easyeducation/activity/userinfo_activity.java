@@ -43,6 +43,7 @@ public class userinfo_activity  extends Activity{
 	 private SharedPreferences static_userinfo;
 	 private ImageView headimage;
 	 private TextView nickname,studyid,school,sign,description,myarticle;
+	public  static Bitmap userheadimg;
 	 
 	protected void onCreate(Bundle savedInstanceState) {	
 		super.onCreate(savedInstanceState);
@@ -132,6 +133,7 @@ public class userinfo_activity  extends Activity{
 				Bitmap bitmap=ImageChange.BytetoImg(data.getString("headsrc"));
 						
 				headimage.setImageBitmap(bitmap);
+				userheadimg=bitmap;;
 				nickname.setText(nickname_s);
 				studyid.setText(studyid_s);
 				school.setText(school_s);

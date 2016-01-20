@@ -2,6 +2,7 @@ package com.easyeducation.activity;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
@@ -18,6 +19,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.easyeducation.activity.colleciton_user_activity.MylistAdspter;
 import com.easyeducation.activity.colleciton_user_activity.MylistAdspter.Zujian;
 import com.hwd.cw.test.R;
 
@@ -34,6 +36,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -45,11 +50,13 @@ public class Myarticle_activity  extends Activity{
 	private ListView article_list;
 	private ImageView back;
 	 private ProgressDialog progressBar;
+		List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();  
 	protected void onCreate(Bundle savedInstanceState) {	
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.setContentView(R.layout.myarticle_xml);
 		article_list=(ListView) this.findViewById(R.id.myarticle_list);
+		                          
 		back=(ImageView) this.findViewById(R.id.myarticle_back_userinfo);
 		back.setOnClickListener(new OnClickListener(){
 			@Override
@@ -59,70 +66,32 @@ public class Myarticle_activity  extends Activity{
 			}
 		});
 		getmyarticleTask mytask=new getmyarticleTask();
-		mytask.executeOnExecutor(Executors.newCachedThreadPool());	
+		mytask.executeOnExecutor(Executors.newCachedThreadPool());
+		article_list.setOnItemClickListener(new OnItemClickListener(){
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				// TODO 自动生成的方法存根
+				TextView title=(TextView) arg1.findViewById(R.id.first_list_newstitle);
+				String id=(String)title.getTag();
+				System.out.println("article_id="+id);
+				Intent intent =new Intent();
+				intent.setClass(Myarticle_activity.this, news_activity.class);
+				intent.putExtra("id", id);
+				startActivity(intent);
+			}
+			
+		});
+		
+			
+		
+		
 
 
 	}
 	
-	 public class MyarticlelistAdspter extends BaseAdapter {  
-	        
-	        private List<Map<String, Object>> data;  
-	        private LayoutInflater layoutInflater;  
-	        private Context context;  
-	        public MyarticlelistAdspter(Context context,List<Map<String, Object>> data){  
-	            this.context=context;  
-	            this.data=data;  
-	            this.layoutInflater=LayoutInflater.from(context);  
-	        }  
-	        /** 
-	         * ������ϣ���Ӧlist.xml�еĿؼ� 
-	         * @author Administrator 
-	         */  
-	        public final class Zujian{  
-	           
-	            public TextView  title;  
-	            
-	        }  
-	        @Override  
-	        public int getCount() {  
-	            return data.size();  
-	        }  
-	        /** 
-	         * ���ĳһλ�õ����� 
-	         */  
-	        @Override  
-	        public Object getItem(int position) {  
-	            return data.get(position);  
-	        }  
-	        /** 
-	         * ���Ψһ��ʶ 
-	         */  
-	        @Override  
-	        public long getItemId(int position) {  
-	            return position;  
-	        }  
-	      
-	        @Override  
-	        public View getView(int position, View convertView, ViewGroup parent) {  
-	            Zujian zujian=null;  
-	            if(convertView==null){  
-	                zujian=new Zujian();  
-	                //��������ʵ�������  
-	                convertView=layoutInflater.inflate(R.layout.article_list_xml, null);  
-	                zujian.title=(TextView) convertView.findViewById(R.id.my_article_title);
-	            
-	                convertView.setTag(zujian);  
-	            }else{  
-	                zujian=(Zujian)convertView.getTag();  
-	            }  
-	            //������  	            
-	            zujian.title.setText((String)data.get(position).get("title"));                                                
-	            return convertView;  
-	        }  
-	    }  
-	 
-	 
-	 
+
 
 public class getmyarticleTask extends AsyncTask<Object,Integer,String>
 	 {
@@ -137,7 +106,7 @@ public class getmyarticleTask extends AsyncTask<Object,Integer,String>
 			HttpPost httpPost=new HttpPost(url);
 			List<NameValuePair>param=new ArrayList<NameValuePair>();
 			
-			param.add(new BasicNameValuePair("getuserarticle","logup"));
+			param.add(new BasicNameValuePair("action","getuserarticle"));
 			param.add(new BasicNameValuePair("username",login_activity.userphone));
 			
 			
@@ -161,14 +130,41 @@ public class getmyarticleTask extends AsyncTask<Object,Integer,String>
 	        } 							
 			return result;
 		} 
-		 @SuppressLint("ShowToast")
+		 @SuppressWarnings({ "unchecked", "unchecked" })
+		@SuppressLint("ShowToast")
 		@Override  
 	        protected void onPostExecute(String result) {  
 			
 			 try {
-				JSONObject data = new JSONObject(result);		
-				
+				JSONObject data = new JSONObject(result);	
+			
 				progressBar.dismiss();
+				
+				JSONObject arts=data.getJSONObject("arts");
+				int n=arts.getInt("n");
+				System.out.println("n="+n);
+				for(int i=0;i<n;i++)
+				{
+					
+					JSONObject current=arts.getJSONObject(String.valueOf(i+1));
+					
+					String title=current.getString("title");
+					
+			        String time=current.getString("date");
+					
+					String id=current.getString("id");
+				
+					Map<String, Object> map=new HashMap<String, Object>();
+					map.put("id", id);
+					map.put("time",time);
+					map.put("title", title);
+					list.add(map);
+				}
+				
+				MylistAdspter adapter=new MylistAdspter(Myarticle_activity.this, list);
+				article_list.setAdapter(adapter);
+			
+			
 				
 			} catch (JSONException e) {
 				
@@ -198,4 +194,85 @@ public class getmyarticleTask extends AsyncTask<Object,Integer,String>
 		        progressBar.setProgress(vlaue);  
 		    }  
 	 }
+
+
+public class MylistAdspter extends BaseAdapter {
+
+	private List<Map<String, Object>> data;
+	private LayoutInflater layoutInflater;
+	private Context context;
+
+	public MylistAdspter(Context context, List<Map<String, Object>> data) {
+		this.context = context;
+		this.data = data;
+		this.layoutInflater = LayoutInflater.from(context);
+	}
+
+	/**
+	 * 组件集合，对应list.xml中的控件
+	 * 
+	 * @author Administrator
+	 */
+	public final class Zujian {
+		public ImageView headimg;
+		public TextView username;
+		public TextView texttitle;
+		public TextView nowtime;
+
+	}
+
+	@Override
+	public int getCount() {
+		return data.size();
+	}
+
+	/**
+	 * 获得某一位置的数据
+	 */
+	@Override
+	public Object getItem(int position) {
+		return data.get(position);
+	}
+
+	/**
+	 * 获得唯一标识
+	 */
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		Zujian zujian = null;
+		if (convertView == null) {
+			zujian = new Zujian();
+			// 获得组件，实例化组件
+			convertView = layoutInflater.inflate(R.layout.firstpage_list,
+					null);
+			zujian.headimg = (ImageView) convertView
+					.findViewById(R.id.first_list_headimg);
+			zujian.username = (TextView) convertView
+					.findViewById(R.id.first_list_username);
+			zujian.texttitle = (TextView) convertView
+					.findViewById(R.id.first_list_newstitle);
+			zujian.nowtime = (TextView) convertView
+					.findViewById(R.id.first_list_newstime);
+			convertView.setTag(zujian);
+		} else {
+			zujian = (Zujian) convertView.getTag();
+		}
+		// 绑定数据
+		zujian.username
+				.setText((String) data.get(data.size()-1-position).get(
+						"title"));
+		zujian.texttitle.setTag((String) data.get(data.size()-1-position).get("id"));
+		zujian.texttitle.setText("");      
+		zujian.nowtime.setText((String) data.get(data.size()-1-position).get("time"));
+		zujian.headimg.setImageBitmap(userinfo_activity.userheadimg);
+
+		return convertView;
+	}
+
+}
 }
